@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>{{tweetsTitle}}</h1>
+
+<div>
+ <label>Autor:
+ <input [(ngModel)]="miTweet.autor" placeholder="Make a Tweet">
+ </label>
+</div>
+<div>
+ <label>Tweet:</label>
+ <textarea rows="4" cols="50" [(ngModel)]="miTweet.texto">
+ </textarea>
+
+</div>
+
+ <div>
+ <h2>{{miTweet.texto}} </h2>
+ id: {{miTweet.id}}
+ autor: {{miTweet.autor}}
+</div>
+
+<router-outlet></router-outlet>
